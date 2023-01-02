@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="./index.js"></script>
+	<script type="text/javascript" src="./pingpoliCandlestickChart.js"></script>
+	<script type="text/javascript" src="./pingpoliWebSocket.js"></script>
+</head>
+<body>
+	<canvas width="1200" height="550" id="canvas"></canvas>
+<script>
+var candlestickStream = new CandlestickStream( "btceur" , "1m" );
+candlestickStream.start();
+</script>
+
+
+</body>
+</html>
+
